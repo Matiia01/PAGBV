@@ -5,21 +5,37 @@
 	text-decoration-line: none;
 }
 
+/*Header*/
+.header {
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+
+
+
+.div-grilla-principal{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 6% 94%;
+}
+/*Imagen Titulo*/
+.grilla-escudo{
+	grid-column: 1/2;
+	height: 100%;
+	width: 100%;
+}
+
 /*Titulo*/
-.title {
+.grilla-title{
+	grid-column: 2/3;
 	text-align: center;
+	font-size: 40px;
 	background: black;
 	padding: 10px 15px;
 	color: white;
-}
-
-/*Imagen Titulo*/
-
-/*Header*/
-.header {
-	height: 50px;
-	width: 100%;
-	position: fixed;
 }
 
 /*Barra Navegavion*/
@@ -33,7 +49,7 @@
 
 /*Botones Navegacion*/
 .boton-nav {
-	width: 250px;
+	width: 100%;
 	padding: 0px 20px 0px 20px;
 	background: linear-gradient(to top, rgb(230, 22, 16) 0%, rgb(135, 13, 9) 100%);
 	border-color: #232323;
@@ -46,75 +62,22 @@
 	margin-block-end: 1em;
 }
 
-/*Color Letra Botones*/
+.boton-nav :hover{
+	background-color: rgb(151, 38, 38);
+}
+
+/*COLOR LETRAS BOTONES*/
 header nav ul li a {
 	color: white;
 	text-decoration: none;
 }
 
-/*Pie de Pagina*/
-.piepadre {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	color: white;
-	margin-top: 10px;
-}
-
-/*Rectangulos*/
-.footer-preguntas-frecuentes {
-	width: 410px;
-	height: 120px;
-	padding: 8px 8px 8px 8px;
-	background: linear-gradient( rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
-	color: #ffffff;
-	border-color: #000000;
-	border-width: 1px;
-	border-style: solid;
-	font-family: "Helvetica";
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.5;
-	text-align: center;
-}
-.footer-contactos {
-	width: 430px;
-	height: 120px;
-	padding: 8px 8px 8px 8px;
-	background: linear-gradient( rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
-	color: #ffffff;
-	border-color: #000000;
-	border-width: 1px;
-	border-style: solid;
-	font-family: "Helvetica";
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.5;
-	text-align: center;
-}
-.footer-redes {
-	width: 460px;
-	height: 120px;
-	padding: 8px 8px 8px 8px;
-	background: linear-gradient( rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
-	color: #ffffff;
-	border-color: #000000;
-	border-width: 1px;
-	border-style: solid;
-	font-family: "Helvetica";
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.5;
-	text-align: center;
-}
-
-/*INDEX////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*Imagen*/
+/*INDEX/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*IMAGEN INDEX*/
 .conten-image {
 	width: 1040px;
 	height: 500px;
-	margin-top: 110px;
+	margin-top: 130px;
 	margin-bottom: 10px;
 	margin-inline: 10%;
 }
@@ -220,7 +183,7 @@ header nav ul li a {
 /*Titulo Historia*/
 .titulo-secundario-historia {
 	width: 750px;
-	margin-top: 110px;
+	margin-top: 130px;
 	margin-left: 150px;
 	margin-right: 100px;
 	padding: 8px 8px 8px 8px;
@@ -317,7 +280,7 @@ header nav ul li a {
 /*Titulo Intervenciones*/
 .titulo-secundario-intervenciones {
 	width: 750px;
-	margin-top: 110px;
+	margin-top: 130px;
 	margin-left: 150px;
 	margin-right: 100px;
 	padding: 8px 8px 8px 8px;
@@ -348,7 +311,6 @@ header nav ul li a {
 }
 
 /*CAPACITACIONES///////////////////////////////////////////////////////////////////////////////////////////////*/
-
 .main-capacitaciones{
 	display: flex;
 }
@@ -398,7 +360,7 @@ header nav ul li a {
 /*Titulo Capacitaciones*/
 .titulo-secundario-capacitaciones {
 	width: 750px;
-	margin-top: 110px;
+	margin-top: 130px;
 	margin-left: 150px;
 	margin-right: 100px;
 	padding: 8px 8px 8px 8px;
@@ -442,18 +404,79 @@ header nav ul li a {
 	margin-right: 25px;
 }
 
-/*CONTACTO///////////////////////////////////////*/
+/*CONTACTO//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Grillas Contacto*/
+.div-contacto{
+	margin: 100px auto;
+	margin-bottom: 0px;
+	width: 1100px;
+	height: 600px;
+	display: grid;
+	grid-template-rows: 80px 60px 60px 60px 300px;
+	grid-template-columns: 550px 550px;
+}
 
-.main-contacto{
+.grilla-titulo{
+	grid-column: 1/3;
+}
+
+.grilla-telefono{
+	grid-row: 2/3;
+	margin-left: 200px;
+	margin-top: 20px;
 	display: flex;
+}
+
+.grilla-instagram{
+	grid-row: 3/4;
+	margin-left: 200px;
+	margin-top: 20px;
+	display: flex;
+}
+
+.grilla-facebook{
+	grid-row: 4/5;
+	margin-left: 200px;
+	margin-top: 20px;
+	display: flex;
+}
+
+.grilla-mapa{
+	grid-row: 5/6;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.grilla-nombre{
+	grid-row: 2/3;
+	margin-top: 20px;
+	margin-left: 90px;
+}
+
+.grilla-email{
+	grid-row: 3/4;
+	margin-left: 90px;
+}
+
+.grilla-asunto{
+	grid-row: 4/5;
+	margin-left: 90px;
+}
+
+.grilla.text {
+	grid-row: 5/6;
+}
+
+.grilla-enviar{
+	grid-row: 5/6;
+	margin-left: 200px;
 }
 
 /*Titulo Contacto*/
 .titulo-secundario-contacto{
-	width: 750px;
-	margin-top: 110px;
-	margin-left: 5px;
-	margin-right: 100px;
+	width: 800px;
+	margin: 10px auto;
+	margin-top: 30px;
 	padding: 8px 8px 8px 8px;
 	background: linear-gradient(to top, rgb(230, 22, 16) 0%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
@@ -467,41 +490,129 @@ header nav ul li a {
 	text-align: center;
 }
 
-/*Formulario*/
-.aside-contactos{
-	margin-top: 200px;
-	margin-left: 200px;
-	margin-bottom: 50px;
+/*Contactos*/
+.clas-contactos :any-link{
+	color: black;
 }
 
+.clas-contactos {
+	width: 500px;
+	font-size: 20px;
+}
+
+.maps-contactos{
+	height: 200px;
+	width: 300px;
+	margin-left: 140px;
+}
+
+/*Iconos Contactos*/
+.icon-telefono{
+	grid-row: 2/3;
+	width: 30px;
+	height: 20px;
+	margin-right: 10px;
+
+}
+
+.icon-instagram{
+	grid-row: 3/4;
+	width: 30px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.icon-facebook{
+	grid-row: 4/5;
+	width: 30px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+/*Formulario*/
 .nombre-contactos{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .email-contacto{
 	margin-left: 14px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .asunto-contacto{
 	margin-left: 7px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .text-contactos{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	margin-left: 90px;
 }
 
-/*Contactos*/
-.contactos{
-	margin-left: 300px;
-	margin-top: 50px;
+/*Pie de Pagina ////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.piepadre {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	color: white;
+	margin-top: 10px;
 }
 
-.clas-contactos{
-	margin-bottom: 50px;
+/*COLOR LINKS CONTACTOS PIE*/
+.links-contactos{
+	color: white;
+	text-decoration: none;
 }
 
-.maps-contactos{
-	margin-left: 150px;
+/*RECTANGULOS PIE DE PAGINA*/
+/*RECTANGULO PREGUNTAS FRECUENTES*/
+.footer-preguntas-frecuentes {
+	width: 410px;
+	height: 120px;
+	padding: 8px 8px 8px 8px;
+	background: linear-gradient( rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
+	color: #ffffff;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/*RECTANGULO CONTACTOS*/
+.footer-contactos {
+	width: 430px;
+	height: 120px;
+	padding: 8px 8px 8px 8px;
+	background: linear-gradient( rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
+	color: #ffffff;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/*RECTANGULO REDES*/
+.footer-redes {
+	width: 460px;
+	height: 120px;
+	padding: 8px 8px 8px 8px;
+	background: linear-gradient( rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
+	color: #ffffff;
+	border-color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	font-family: "Helvetica";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: center;
 }
