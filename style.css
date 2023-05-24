@@ -4,6 +4,11 @@
 	list-style-type: none;
 	text-decoration-line: none;
 	font-family: serif;
+	z-index: 0;
+}
+
+body{
+	background-color: rgba(255, 68, 0, 0.397);
 }
 
 /*Header*/
@@ -39,6 +44,7 @@
 	margin: 0px;
 	padding: 10px 15px;
 	color: white;
+	line-height: 1.3;
 }
 
 /*Barra Navegavion*/
@@ -74,17 +80,23 @@
 	color: white;
 }
 
-/*INDEX/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*IMAGEN INDEX*/
-.conten-image {
-	width: 1040px;
-	height: 500px;
-	margin-top: 50px;
-	margin-bottom: 10px;
-	margin-inline: 10%;
+/*MEDIA QUIERE HEADER*/
+@media (max-width: 320px) {
+	.header{
+		
+	}
 }
 
-/*Secciones*/
+/*INDEX/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*IMAGEN INDEX*/
+.div-carrusel {
+	margin-top: 130px;
+	margin-bottom: 10px;
+	margin-inline: 15%;
+	width: 70%;
+}
+
+/*SECCIONES*/
 .section-index{
 	margin-top: 100px;
 }
@@ -142,56 +154,11 @@
 	display: flex;
 }
 
-/*Barra Lateral Historia*/
-.barra-lateral-historias {
-	width: 900px;
-	height: 335px;
-	margin-top: 250px;
-	margin-left: 5px;
-	background: linear-gradient(to left, rgb(230, 22, 16) 86%, rgb(135, 13, 9) 100%);
-	color: #ffffff;
-	border-color: #000000;
-	border-width: 1px;
-	border-style: solid;
-	font-family: "Helvetica";
-	font-weight: 400;
-	font-size: 8px;
-	text-align: left;
-	position: sticky;
-	top: 250px;
-}
-
-/*Nav Barra Lateral Historia*/
-.nav-barra-lateral-historias {
-	width: 250px;
-	height: 100px;
-	margin: 5px 0px 5px 5px;
-	padding: 5px 0px 5px 5px;
-}
-
-/*Titulos Barra Lateral*/
-.titulos-lateral-historias {
-	color: white;
-	height: 50px;
-	width: 200px;
-	padding: 10px 30px 0px 20px;
-	background: linear-gradient(to left, rgb(230, 22, 16) 86%, rgb(135, 13, 9) 100%);
-	border-color: #232323;
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 3px 3px 3px 3px;
-	font-weight: 400;
-	font-size: 20px;
-	text-align: center;
-	margin-block-end: 1em;
-}
-
 /*Titulo Historia*/
 .titulo-secundario-historia {
 	width: 750px;
 	margin-top: 130px;
-	margin-left: 150px;
-	margin-right: 100px;
+	margin-left: 35%;
 	padding: 8px 8px 8px 8px;
 	background: linear-gradient(to top, rgb(230, 22, 16) 74%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
@@ -203,15 +170,16 @@
 	font-size: 24px;
 	line-height: 1.3;
 	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 /*Texto Historia*/
 .texto-historia {
-	width: 800px;
+	width: 840px;
 	height: 550px;
 	margin-top: 25px;
-	margin-left: 150px;
-	margin-bottom: 5px;
+	margin-left: 30%;
 	color: #000000;
 	font-family: "Helvetica";
 	font-weight: 400;
@@ -222,8 +190,7 @@
 
 /*Articulo Imagenes Historia*/
 .articulo-imagenes-historia {
-	margin-top: 5px;
-	margin-left: 150px;
+	margin-left: 35%;
 	display: inline-flex;
 }
 
@@ -236,61 +203,18 @@
 }
 
 /*INTERVENCIONES///////////////////////////////////////////////////////////////////////////////////////////////*/
-
 .main-intervenciones {
 	display: flex;
 }
 
-/*Barra Lateral Intervenciones*/
-.barra-lateral-intervenciones {
-	width: 1000px;
-	height: 460px;
-	margin-top: 180px;
-	margin-left: 5px;
-	background: linear-gradient(to left, rgb(230, 22, 16) 0%, rgb(135, 13, 9) 100%);
-	color: #ffffff;
-	border-color: #000000;
-	border-width: 1px;
-	border-style: solid;
-	font-family: "Helvetica";
-	font-weight: 400;
-	font-size: 8px;
-	text-align: left;
-}
-
-/*Nav Barra Lateral Intevenciones*/
-.nav-barra-lateral-intervenciones {
-	width: 250px;
-	height: 100px;
-	margin: 5px 0px 5px 5px;
-	padding: 5px 0px 5px 5px;
-}
-
-/*Titulos Barra Lateral Intervenciones*/
-.titulos-lateral-intervenciones {
-	color: white;
-	height: 48px;
-	width: 200px;
-	padding: 7px 20px 0px 10px;
-	background: linear-gradient(to left, rgb(230, 22, 16) 0%, rgb(135, 13, 9) 100%);
-	border-color: #232323;
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 3px 3px 3px 3px;
-	font-weight: 400;
-	font-size: 20px;
-	text-align: center;
-	margin-block-end: 1em;
-}
-
 /*Titulo Intervenciones*/
-.titulo-secundario-intervenciones {
+.titulo-secundario-intervenciones{
 	width: 750px;
+	height: 250;
 	margin-top: 130px;
-	margin-left: 150px;
-	margin-right: 100px;
+	margin-left: 27%;
 	padding: 8px 8px 8px 8px;
-	background: linear-gradient(to top, rgb(230, 22, 16) 0%, rgb(135, 13, 9) 100%);
+	background: linear-gradient(to top, rgb(230, 22, 16) 74%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
 	border-color: #000000;
 	border-width: 1px;
@@ -305,7 +229,7 @@
 /*Articulo Imagen de Intervenciones*/
 .articulo-imagenes-intervenciones {
 	margin-top: 20px;
-	margin-left: 150px;
+	margin-left: 300px;
 }
 
 /*Imagenes Intervenciones*/
@@ -313,7 +237,7 @@
 	width: 150px;
 	height: 150px;
 	margin-right: 52px;
-
+	margin-bottom: 30px;
 }
 
 /*CAPACITACIONES///////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -321,54 +245,11 @@
 	display: flex;
 }
 
-/*Barra Lateral Capacitaciones*/
-.barra-lateral-capacitaciones {
-	width: 800px;
-	height: 460px;
-	margin-top: 190px;
-	margin-left: 5px;
-	background: linear-gradient(to left, rgb(230, 22, 16) 0%, rgb(135, 13, 9) 100%);
-	color: #ffffff;
-	border-color: #000000;
-	border-width: 1px;
-	border-style: solid;
-	font-family: "Helvetica";
-	font-weight: 400;
-	font-size: 8px;
-	text-align: left;
-}
-
-/*Nav Barra Lateral Capacitaciones*/
-.nav-barra-lateral-capacitaciones {
-	width: 300px;
-	height: 200px;
-	margin: 5px 0px 5px 5px;
-	padding: 5px 0px 5px 5px;
-}
-
-/*Titulos Barra Lateral Capacitaciones*/
-.titulos-lateral-capacitaciones {
-	color: white;
-	height: 48px;
-	width: 200px;
-	padding: 7px 0px 0px 10px;
-	background: linear-gradient(to left, rgb(230, 22, 16) 0%, rgb(135, 13, 9) 100%);
-	border-color: #232323;
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 3px 3px 3px 3px;
-	font-weight: 400;
-	font-size: 20px;
-	text-align: center;
-	margin-block-end: 1em;
-}
-
 /*Titulo Capacitaciones*/
 .titulo-secundario-capacitaciones {
 	width: 750px;
 	margin-top: 130px;
-	margin-left: 150px;
-	margin-right: 100px;
+	margin-left: 35%;
 	padding: 8px 8px 8px 8px;
 	background: linear-gradient(to top, rgb(230, 22, 16) 0%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
@@ -384,10 +265,10 @@
 
 /*Texto Capacitaciones*/
 .texto-capacitaciones {
-	width: 770px;
-	height: 300px;
+	width: 900px;
+	height: 550px;
 	margin-top: 25px;
-	margin-left: 150px;
+	margin-left: 30%;
 	color: #000000;
 	font-family: "Helvetica";
 	font-weight: 400;
@@ -407,7 +288,7 @@
 .imagenes-capacitaciones {
 	width: 400px;
 	height: 200px;
-	margin-right: 25px;
+	margin-left: 35%;
 }
 
 /*CONTACTO//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -556,9 +437,7 @@
 }
 
 
-*,
-::after,
-::before {
+*, ::after, ::before {
 	box-sizing: content-box
 }
 
@@ -577,6 +456,7 @@
 .footer-preguntas-frecuentes {
 	width: 410px;
 	height: 120px;
+	margin-bottom: 0px;
 	padding: 8px 8px 8px 8px;
 	background: linear-gradient(rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
@@ -585,7 +465,7 @@
 	border-style: solid;
 	font-family: "Helvetica";
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.5;
 	text-align: center;
 }
@@ -594,6 +474,7 @@
 .footer-contactos {
 	width: 430px;
 	height: 120px;
+	margin-bottom: 0px;
 	padding: 8px 8px 8px 8px;
 	background: linear-gradient(rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
@@ -611,6 +492,7 @@
 .footer-redes {
 	width: 460px;
 	height: 120px;
+	margin-bottom: 0px;
 	padding: 8px 8px 8px 8px;
 	background: linear-gradient(rgb(230, 22, 16) 45%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
