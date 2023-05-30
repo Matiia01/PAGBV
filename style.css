@@ -11,6 +11,11 @@ body {
 	background-color: rgba(255, 68, 0, 0.397);
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
+
 /*Header*/
 .header {
 	height: 80px;
@@ -515,11 +520,11 @@ body {
 
 	/*HEADER*/
 	.header {
-		width: 320px;
+		width: 100%;
 	}
 
 	.div-grilla-principal {
-		grid-template-columns: 60px 270px;
+		grid-template-columns: 20% 80%;
 	}
 
 	.grilla-title {
@@ -529,18 +534,50 @@ body {
 	}
 
 	.barra-nav {
-		width: 320px;
+		width: 100%;
 		display: flex;
 		padding: 0px;
 	}
 
-	.boton-nav {
-		width: 62px;
+	#boton-inicio {
+		width: 48px;
+		height: 11px;
 		margin: 0;
 		padding: 0;
-		font-size: 7px;
+		font-size: 8px;
 	}
 
+	#boton-historia {
+		width: 59px;
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		font-size: 8px;
+	}
+
+	#bontoninter {
+		width: 74px;
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		font-size: 8px;
+	}
+
+	#boton-capacitaciones {
+		width: 74px;
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		font-size: 8px;
+	}
+
+	#boton-contactos {
+		width: 59px;
+		height: 12px;
+		margin: 0;
+		padding: 0;
+		font-size: 8px;
+	}
 	/*FOOTER*/
 	h3 {
 		font-size: 20px;
@@ -599,7 +636,7 @@ body {
 		width: 100px;
 		height: 25px;
 		padding: 10px 2px 2px 10px;
-		margin-left: 18px;
+		margin-left: 20px;
 		margin-bottom: 15px;
 		font-size: 12px;
 	}
@@ -659,14 +696,14 @@ body {
 	/*Articulo Imagen de Intervenciones*/
 	.articulo-imagenes-intervenciones {
 		margin-top: 20px;
-		margin-left: 30px;
+		margin-left: 5px;
 		display: flex;
 	}
 
 	/*Imagenes Intervenciones*/
 	.imagenes-intervenciones {
-		width: 70px;
-		height: 70px;
+		width: 100px;
+		height: 100px;
 		margin-right: 5px;
 		margin-bottom: 30px;
 	}
@@ -870,11 +907,11 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
 	/*HEADER*/
 	.header {
-		width: 768px;
+		width: 100%;
 	}
 
 	.div-grilla-principal {
-		grid-template-columns: 10% 90%;
+		grid-template-columns: 12% 88%;
 	}
 
 	.grilla-escudo{
@@ -886,17 +923,15 @@ body {
 		grid-column: 2/3;
 		padding-top: 10px;
 		text-align: center;
-		font-size: 31px;
+		font-size: 32px;
 		border-color: #000000;
 	}
 
 	.barra-nav {
-		width: 768px;
+		width: 100%;
 		display: flex;
 		padding: 0px;
 	}
-
-
 
 	.boton-nav {
 		width: 156px;
@@ -952,7 +987,7 @@ body {
 		height: 30px;
 		padding: 10px 2px 2px 10px;
 		margin-top: 10px;
-		margin-left: 120px;
+		margin-left: 130px;
 		margin-bottom: 15px;
 		font-size: 12px;
 	}
@@ -1000,7 +1035,7 @@ body {
 	/*Imagenes Historia*/
 	.imagenes-historia {
 		width: 200px;
-		height: 100px;
+		height: 120px;
 		margin-right: 5px;
 
 	}
@@ -1022,17 +1057,16 @@ body {
 	/*Articulo Imagen de Intervenciones*/
 	.articulo-imagenes-intervenciones {
 		margin-top: 20px;
-		margin-left: 200px;
+		margin-left: 20px;
 		margin-right: 150px;
 		display: flex;
 	}
 
 	/*Imagenes Intervenciones*/
 	.imagenes-intervenciones {
-		width: 70px;
-		height: 70px;
-		margin-right: 5px;
-		margin-bottom: 30px;
+		width: 200px;
+		height: 200px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -1068,9 +1102,9 @@ body {
 
 	/*Imagenes Capacitaciones*/
 	.imagenes-capacitaciones {
-		width: 200px;
-		height: 100px;
-		margin-top: 50px;
+		width: 350px;
+		height: 200px;
+		margin-top: 70px;
 		margin-left: 55px;
 	}
 }
