@@ -50,7 +50,12 @@
 .card {
 	margin: 0px;
 }
-
+.imagen-acord-cd {
+	margin-left: 6%;
+}
+.imagen-acord-unid {
+	margin-left: 16%;
+}
 
 /*MEDIA QUERIES -320PX +767px*/
 /*INDEX//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -76,13 +81,18 @@
 			font-size: 7px;
 		}
 	}
-	
+	.imagen-acord-cd {
+		margin-left: 0;
+	}
+	.imagen-acord-unid {
+		margin-left: 0;
+	}
 	
 }
 
 /*MEDIA QUERIES -768px +1024px*/
 /*INDEX//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 	.section-index {
 		margin-top: 20%;
 	}
@@ -102,5 +112,23 @@
 		p {
 			font-size: 11px;
 		}
+	}
+	.imagen-acord-cd {
+		margin-left: 0;
+	}
+	.imagen-acord-unid {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	.section-index {
+		margin-top: 16%;
+	}
+	.imagen-acord-cd {
+		margin-left: 0;
+	}
+	.imagen-acord-unid {
+		margin-left: 6%;
 	}
 }

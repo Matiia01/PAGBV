@@ -4,11 +4,11 @@
 }
 
 /*Titulo Intervenciones*/
-.titulo-secundario-intervenciones {
+.animate__animated {
 	width: 750px;
 	height: 250;
 	margin-top: 130px;
-	margin-left: 27%;
+	margin-left: 35%;
 	padding: 8px 8px 8px 8px;
 	background: linear-gradient(to top, rgb(230, 22, 16) 74%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
@@ -24,16 +24,17 @@
 
 /*Articulo Imagen de Intervenciones*/
 .articulo-imagenes-intervenciones {
+	display: flex;
 	margin-top: 20px;
-	margin-left: 300px;
+	margin-bottom: 20px;
+	margin-left: 25%;
 }
 
-/*Imagenes Intervenciones*/
-.imagenes-intervenciones {
-	width: 150px;
-	height: 150px;
-	margin-right: 52px;
-	margin-bottom: 30px;
+.div-imagenes-intervenciones-1 {
+	margin: 5px;
+}
+.card {
+	margin-bottom: 5px;
 }
 
 /*MEDIA QUERIES -320PX +767px*/
@@ -41,7 +42,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
 
 	/*Titulo Intervenciones*/
-	.titulo-secundario-intervenciones {
+	.animate__animated {
 		width: 250px;
 		margin-top: 90px;
 		margin-left: 30px;
@@ -55,14 +56,6 @@
 		margin-left: 5px;
 		display: flex;
 	}
-
-	/*Imagenes Intervenciones*/
-	.imagenes-intervenciones {
-		width: 100px;
-		height: 100px;
-		margin-right: 5px;
-		margin-bottom: 30px;
-	}
 }
 
 /*MEDIA QUERIES -768px +1024px*/
@@ -70,7 +63,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
 	/*Titulo Intervenciones*/
-	.titulo-secundario-intervenciones {
+	.animate__animated {
 		width: 450px;
 		margin-top: 140px;
 		margin-left: 150px;
@@ -84,12 +77,5 @@
 		margin-left: 20px;
 		margin-right: 150px;
 		display: flex;
-	}
-
-	/*Imagenes Intervenciones*/
-	.imagenes-intervenciones {
-		width: 200px;
-		height: 200px;
-		margin-bottom: 10px;
 	}
 }

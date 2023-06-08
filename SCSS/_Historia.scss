@@ -4,8 +4,9 @@
 	display: flex;
 }
 
+
 /*Titulo Historia*/
-.titulo-secundario-historia {
+.animate__animated {
 	width: 750px;
 	margin-top: 130px;
 	margin-left: 35%;
@@ -22,6 +23,7 @@
 	text-align: center;
 	align-items: center;
 	justify-content: center;
+	animation: animate__backInLeft;
 }
 
 /*Texto Historia*/
