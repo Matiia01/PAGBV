@@ -25,13 +25,17 @@
 	text-align: center;
 }
 
+footer div ul {
+	padding: 0px;
+}
 /*COLOR LINKS CONTACTOS PIE*/
 .links-contactos {
 	color: white;
 	text-decoration: none;
 }
 h3 {
-	margin-bottom: 0px;
+	margin-top: 4px;
+	margin-bottom: 5px;
 }
 
 /*MEDIA QUERIES -320PX +767px*/
@@ -47,7 +51,7 @@ h3 {
 		width: 50%;
 		height: 110px;
 		margin-top: 10px;
-		padding-left: 3px;
+		padding-left: 0px;
 		padding-right: 3px;
 		font-size: 10px;
 	}
@@ -66,7 +70,7 @@ h3 {
 		width: 50%;
 		height: 280px;
 		margin-top: 30px;
-		padding-left: 3px;
+		padding-left: 0px;
 		padding-right: 3px;
 		font-size: 25px;
 	}
