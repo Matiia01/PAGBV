@@ -263,6 +263,9 @@
     padding: 7px 7px 7px 7px;
     font-size: 15px;
   }
+  .card {
+    width: 1rem;
+  }
 }
 /*MEDIA QUERIES -768px +1023px*/
 @media (min-width: 768px) and (max-width: 1023px) {
