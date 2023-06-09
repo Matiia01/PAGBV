@@ -108,7 +108,7 @@
 
 /*MEDIA QUERIES -768px +1023px*/
 /*HEADER*////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 	.header {
 		width: 100%;
 	}
@@ -122,6 +122,60 @@
 	.grilla-title {
 		grid-column: 2/3;
 		padding-top: 3%;
+		text-align: center;
+		font-size: 34px;
+	}
+	#boton-inicio {
+		width: 15%;
+		height: 25px;
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+	}
+	#boton-historia {
+		width: 18%;
+		height: 25px;
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+	}
+	#boton-intervenciones {
+		width: 25%;
+		height: 25px;
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+	}
+	#boton-capacitaciones {
+		width: 25%;
+		height: 25px;
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+	}
+	#boton-contactos {
+		width: 20%;
+		height: 25px;
+		margin: 0;
+		padding: 0;
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 1024px){
+	.header {
+		width: 100%;
+	}
+	.div-grilla-principal {
+		grid-template-columns: 12% 88%;
+	}
+	.grilla-escudo{
+		width: 100%;
+		height: 100%;
+	}
+	.grilla-title {
+		grid-column: 2/3;
+		padding-top: 5%;
 		text-align: center;
 		font-size: 34px;
 	}

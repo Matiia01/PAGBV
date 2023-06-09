@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--LIBRERIA DE ANIMACIONES-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--LIBRERIA DE BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <!--LINK CSS-->
@@ -17,9 +17,9 @@
     <title>Historia BV</title>
 </head>
 
-<body class="body-historia">
+<body>
     <!--HEADER-->
-    <header class="header">
+    <header class="header-historia">
         <div class="div-grilla-principal">
             <!--IMAGEN ESCUDO-->
             <img class="grilla-escudo" src="../image/Escudo/CON FONDO.jpg" alt="Escudo del cuartel">
@@ -30,17 +30,20 @@
         <nav>
             <ul class="barra-nav">
                 <!--BOTON DE INICIO-->
-                <a href="../index.html" class="boton-nav" tabindex="-1" role="button" aria-disabled="true">INICIO</a>
+                <a href="../index.html" class="boton-nav" id="boton-inicio" tabindex="-1" role="button"
+                    aria-disabled="true">INICIO</a>
                 <!--BOTON DE HISTORIA-->
-                <a href="Historia.html" class="boton-nav" tabindex="-1" role="button" aria-disabled="true">HISTORIA</a>
+                <a href="Historia.html" class="boton-nav" id="boton-historia" tabindex="-1" role="button"
+                    aria-disabled="true">HISTORIA</a>
                 <!--BOTON DE INTERVENCIONES-->
-                <a href="Intervenciones.html" class="boton-nav" tabindex="-1" role="button"
+                <a href="Intervenciones.html" class="boton-nav" id="boton-intervenciones" tabindex="-1" role="button"
                     aria-disabled="true">INTERVENCIONES</a>
                 <!--BOTON DE CAPACITACIONES-->
-                <a href="Capacitaciones.html" class="boton-nav" tabindex="-1" role="button"
+                <a href="Capacitaciones.html" class="boton-nav" id="boton-capacitaciones" tabindex="-1" role="button"
                     aria-disabled="true">CAPACITACIONES</a>
                 <!--BOTON DE CONTACTO-->
-                <a href="Contacto.html" class="boton-nav" tabindex="-1" role="button" aria-disabled="true">CONTACTO</a>
+                <a href="Contacto.html" class="boton-nav" id="boton-contactos" tabindex="-1" role="button"
+                    aria-disabled="true">CONTACTO</a>
             </ul>
         </nav>
     </header>
@@ -50,77 +53,80 @@
         <!--SECTION HISTORIA-->
         <section class="seccion-Historia">
             <!--TITULO SECUNDARIO-->
-            <h2 class="animate__animated animate__backInLeft">NUESTRA HISTORIA</h2>
-            <article>
-                <div class="clearfix">
-                    <img src="..." class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+            <h2 class="titulo-secundario-historia">NUESTRA HISTORIA</h2>
 
-                    <p>
-                        La Asociacion Cuerpo de Bomberos Voluntarios de Villa Ascasubi fue creada el 25 de Septiembre
-                        del año 1989 en respuesta a necesidades que presentaban la comunidad.
-                    </p>
+            <div class="clearfix ">
+                <p class="parrafo-acord-historia">La historia comienza en el año 1988, cuando Raúl Mari, vecino oriundo
+                    de
+                    nuestra localidad dio
+                    iniciativa para formar el primer cuerpo de Bomberos Voluntarios en Villa Ascasubi, este, para dar
+                    comienzo a la tarea recluto a 9 hombres para iniciar , los mismos fueron: Asterio Agüero, Víctor
+                    Benítez, Rubén Pereyra, Pedro Ferreyra, Elvio Olguín, Jorge Amalla, Juan Beltrán, Alberto Carranza y
+                    Humberto Acosta, estos 10 hombre, actuales socios fundadores, comenzaron a dar sus primeros pasos en
+                    la vecina localidad de Rio Tercero, allí fue donde se capacitaron dando comienzo a todo lo que es
+                    hoy nuestra familia bomberil, los mismos viajaban una vez por semana en horario nocturno a tomar las
+                    clases que eran dictadas por Bomberos de la vecina localidad , estos primeros pasos fueron duros ya
+                    que no contaban con recursos para poder equipárese de la forma adecuada y al inicio solo utilizaban
+                    ropa y herramientas que recibían como donación pero esto no les impidió seguir su sueño y avanzar.
+                </p>
+            </div>
 
-                    <p>
-                        Nuestros primeros autobombas fueron
-                    </p>
+            <div class="clearfix">
+                <img src="../image/Historia/primera-min.jpg"
+                    class="col-md-6 float-md-end mb-3 ms-md-3 imagen-acord-historia" alt="primer cuartel">
 
-                    <p>
-                        And yet, here you are, still persevering in reading this placeholder text, hoping for some more
-                        insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of
-                        that here.
-                    </p>
-                </div>
-            </article>
+                <p class="parrafo-acord-historia">En el año 1989 ascendieron como Bomberos Voluntarios y el 25 de
+                    Septiembre
+                    del mismo año se forma
+                    como destacamento de Rio Tercero el primer cuartel en Villa Ascasubi, siendo el logo de la
+                    institución una paloma con dos lenguas de fuego por detrás, esta tarea había sido asignada al
+                    Bombero Juan Beltrán quien no dudo en plasmar una paloma en él, esto se debió a que se refieren a
+                    los habitantes del pueblo como “palomeros”, el cuartel tuvo su primer lugar en un garaje del
+                    municipio ubicado en el centro de la localidad donde actualmente funciona la guardería municipal, el
+                    mismo contaba con un espacio reducido lo cual no fue impedimento para que los Bomberos pudieran
+                    desempeñar su rol, de a pocos se fue adquiriendo nuevo equipamiento gracias a la colaboración de los
+                    vecinos del pueblo, se realizaban rifas y polladas para fechas especiales como el día del padre,
+                    para así lograr solventar los gatos de la institución y así fueron creciendo desde abajo.
+                </p>
+            </div>
 
-            <article>
-                <div class="clearfix">
-                    <img src="..." class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+            <div class="clearfix">
+                <img src="../image/Historia/1-min.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 imagen-acord-historia"
+                    alt="1movil">
+                <img src="../image/Historia/2-min.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 imagen-acord-historia"
+                    alt="2movil">
 
-                    <p>
-                        A paragraph of placeholder text. We're using it here to show the use of the clearfix class.
-                        We're adding quite a few meaningless phrases here to demonstrate how the columns interact here
-                        with the floated image.
-                    </p>
+                <p class="parrafo-acord-historia">Primeramente contaban con la ambulancia municipal y el camión regador
+                    que
+                    cumplía el rol de
+                    autobomba, hasta que adquirieron el móvil número 1, una Chevrolet S10 del año 67 a la cual le
+                    realizaron mejoras para poder cumplir con lo necesario, la misma no contaba con cúpula hasta que
+                    dieron con un armazón de hierro y lona vieja tirado en un campo, el cual restauraron y
+                    acondicionaron para poder utilizarlo, este primer móvil fue equipado para todo tipo de emergencias,
+                    luego ocupando el lugar del móvil número 2, llego el primer autobomba, un Ford 500 V8 del año 62 que
+                    fue comprado a los Bomberos de la Localidad de Hernando, este les facilito el trabajo en incendios
+                    ya que el mismo venia equipado para la comodidad del trabajo en estos. En Octubre del año 1999 se
+                    los reconoce como personería jurídica dándoles el número de cuartel 126 pertenecientes a la regional
+                    5, y desde allí dejaron de ser Destacamento de Rio Tercero y se independizaron como Bomberos
+                    voluntarios de Villa Ascasubi.</p>
+            </div>
 
-                    <p>
-                        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this
-                        would look with some actual content in here, rather than just this boring placeholder text that
-                        goes on and on, but actually conveys no tangible information at. It simply takes up space and
-                        should not really be read.
-                    </p>
-
-                    <p>
-                        And yet, here you are, still persevering in reading this placeholder text, hoping for some more
-                        insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of
-                        that here.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <div class="clearfix">
-                    <img src="..." class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
-
-                    <p>
-                        A paragraph of placeholder text. We're using it here to show the use of the clearfix class.
-                        We're adding quite a few meaningless phrases here to demonstrate how the columns interact here
-                        with the floated image.
-                    </p>
-
-                    <p>
-                        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this
-                        would look with some actual content in here, rather than just this boring placeholder text that
-                        goes on and on, but actually conveys no tangible information at. It simply takes up space and
-                        should not really be read.
-                    </p>
-
-                    <p>
-                        And yet, here you are, still persevering in reading this placeholder text, hoping for some more
-                        insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of
-                        that here.
-                    </p>
-                </div>
-            </article>
+            <div class="clearfix">
+                <img src="../image/Cuerpo Activo/IMG-20220925-WA0128.jpg"
+                    class="col-md-6 float-md-end mb-3 ms-md-3 image-acord-ca imagen-acord-historia" alt="Cuerpo Activo">
+                <p class="parrafo-acord-historia">Con el pasar del tiempo fueron creciendo y en el año 1996 ya tenían en
+                    construcción la actual sala de
+                    máquinas en territorio propio, ese año se mudaron a la misma contando solo con ese espacio para
+                    llevar a cabo las tareas, el tiempo fue pasando y en el año 2000 se logró la inauguración oficial
+                    de: oficina, cocina, baños y vestuarios, luego en el año 2010 se realiza la ampliación de la sala de
+                    máquinas la cual les permite un mayor espacio para guardar los móviles, para el aniversario número
+                    30 se inaugura oficialmente una planta alta donde se encuentra el nuevo salón de reuniones,
+                    permitiendo a la institución contar actualmente con más de 6 espacios en aproximadamente 500 m²,
+                    amplios para el funcionamiento y el desempeño de los Bombero Voluntario y su comisión directiva, así
+                    es como al día de la fecha La localidad cuenta con un cuartel donde se encuentra un cuerpo activo de
+                    20 Bomberos, 6 aspirantes mayores, 6 aspirantes menores y 15 miembros de la comisión directiva entre
+                    ellos el actual presidente de Bomberos Leonardo Del Col desde el año 2019. </p>
+            </div>
         </section>
     </main>
 
