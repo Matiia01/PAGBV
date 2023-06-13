@@ -4,15 +4,13 @@
 	display: flex;
 	width: 100%;
 }
-.seccion-capacitaciones{
-	width: 100%;
-}
+
 /*TITULO CAPACITACIONES*/
 .titulo-secundario-capacitaciones {
 	width: 750px;
 	margin-top: 1%;
 	margin-bottom: 2%;
-	margin-left: 20%;
+	margin-left: 0;
 	padding: 8px 8px 8px 8px;
 	background: linear-gradient(to top, rgb(230, 22, 16) 74%, rgb(135, 13, 9) 100%);
 	color: #ffffff;
@@ -37,22 +35,24 @@
 	border-radius: 1%;
 	border-spacing: 1px;
 }
-.parrafo-acord-capacit{
+
+.parrafo-acord-capacit {
 	width: 90%;
-	text-align: initial;
-	margin-left: 5%;
+	text-align: center;
+	margin-top: 2%;
+	margin-left: 3%;
 }
 
 /*MEDIA QUERIES -320PX +767px*/
 @media (min-width: 320px) and (max-width: 767px) {
 	.titulo-secundario-capacitaciones {
 		width: 80%;
-		margin-top: 1%;
 		margin-left: 10%;
 		padding: 7px 7px 7px 7px;
 		font-size: 15px;
 	}
-	.imagen-acord-capacit{
+
+	.imagen-acord-capacit {
 		width: 100%;
 	}
 }
@@ -61,7 +61,16 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 	.titulo-secundario-capacitaciones {
 		width: 80%;
-		margin-top: 1%;
+		margin-left: 10%;
+		padding: 7px 7px 7px 7px;
+		font-size: 15px;
+	}
+}
+
+/*MEDIA QUERIES -1024px*/
+@media (min-width: 1024px) {
+	.titulo-secundario-capacitaciones {
+		width: 80%;
 		margin-left: 10%;
 		padding: 7px 7px 7px 7px;
 		font-size: 15px;

@@ -1,40 +1,47 @@
-/*HEADER*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*HEADER*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .header {
-	height: 80px;
+	height: 50px;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 1;
 	display: grid;
+	margin-bottom: 5px;
 }
+
 .div-grilla-principal {
 	height: 100%;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 6% 94%;
 }
+
 /*IMAGEN ESCUDO*/
 .grilla-escudo {
 	grid-column: 1/2;
 	height: 100%;
 	width: 100%;
 }
+
 /*TTITULO*/
 .grilla-title {
 	grid-column: 2/3;
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	background: black;
 	margin: 0px;
 	padding: 20px 0px 0px;
 	color: white;
 }
+
 /*BARRA NAV*/
 .barra-nav {
 	width: 100%;
 	display: inline-flex;
-	padding: 0px;	
+	padding: 0px;
 }
+
 /*BOTONES NAV*/
 .boton-nav {
 	width: 100%;
@@ -44,8 +51,8 @@
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 3px 3px 3px 3px;
-	font-weight: 400;
-	font-size: 20px;
+	font-weight: 500;
+	font-size: 25px;
 	text-align: center;
 	margin-block-end: 1em;
 	text-decoration: none;
@@ -54,21 +61,19 @@
 
 /*MEDIA QUERIES -320PX +767px*/
 @media (min-width: 320px) and (max-width: 767px) {
-	.header {
-		width: 100%;
-	}
 	.div-grilla-principal {
 		grid-template-columns: 20% 80%;
 	}
+
 	.grilla-title {
-		grid-column: 2/3;
-		text-align: center; 
 		font-size: 100%;
 		padding: 5%;
 	}
+
 	.barra-nav {
 		display: flex;
 	}
+
 	#boton-inicio {
 		width: 15%;
 		height: 12px;
@@ -76,6 +81,7 @@
 		padding: 0;
 		font-size: 8px;
 	}
+
 	#boton-historia {
 		width: 18%;
 		height: 12px;
@@ -83,6 +89,7 @@
 		padding: 0;
 		font-size: 8px;
 	}
+
 	#boton-intervenciones {
 		width: 25%;
 		height: 12px;
@@ -90,6 +97,7 @@
 		padding: 0;
 		font-size: 8px;
 	}
+
 	#boton-capacitaciones {
 		width: 25%;
 		height: 12px;
@@ -97,6 +105,7 @@
 		padding: 0;
 		font-size: 8px;
 	}
+
 	#boton-contactos {
 		width: 20%;
 		height: 12px;
@@ -107,24 +116,29 @@
 }
 
 /*MEDIA QUERIES -768px +1023px*/
-/*HEADER*////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*HEADER*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (min-width: 768px) and (max-width: 1023px) {
 	.header {
 		width: 100%;
 	}
+
 	.div-grilla-principal {
 		grid-template-columns: 12% 88%;
 	}
-	.grilla-escudo{
+
+	.grilla-escudo {
 		width: 100%;
 		height: 100%;
 	}
+
 	.grilla-title {
 		grid-column: 2/3;
 		padding-top: 3%;
 		text-align: center;
 		font-size: 34px;
 	}
+
 	#boton-inicio {
 		width: 15%;
 		height: 25px;
@@ -132,6 +146,7 @@
 		padding: 0;
 		font-size: 15px;
 	}
+
 	#boton-historia {
 		width: 18%;
 		height: 25px;
@@ -139,6 +154,7 @@
 		padding: 0;
 		font-size: 15px;
 	}
+
 	#boton-intervenciones {
 		width: 25%;
 		height: 25px;
@@ -146,6 +162,7 @@
 		padding: 0;
 		font-size: 15px;
 	}
+
 	#boton-capacitaciones {
 		width: 25%;
 		height: 25px;
@@ -153,6 +170,7 @@
 		padding: 0;
 		font-size: 15px;
 	}
+
 	#boton-contactos {
 		width: 20%;
 		height: 25px;
@@ -162,23 +180,27 @@
 	}
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 	.header {
 		width: 100%;
 	}
+
 	.div-grilla-principal {
 		grid-template-columns: 12% 88%;
 	}
-	.grilla-escudo{
+
+	.grilla-escudo {
 		width: 100%;
 		height: 100%;
 	}
+
 	.grilla-title {
 		grid-column: 2/3;
 		padding-top: 5%;
 		text-align: center;
 		font-size: 34px;
 	}
+
 	#boton-inicio {
 		width: 15%;
 		height: 25px;
@@ -186,6 +208,7 @@
 		padding: 0;
 		font-size: 15px;
 	}
+
 	#boton-historia {
 		width: 18%;
 		height: 25px;
@@ -193,6 +216,7 @@
 		padding: 0;
 		font-size: 15px;
 	}
+
 	#boton-intervenciones {
 		width: 25%;
 		height: 25px;
@@ -200,6 +224,7 @@
 		padding: 0;
 		font-size: 15px;
 	}
+
 	#boton-capacitaciones {
 		width: 25%;
 		height: 25px;
@@ -207,6 +232,7 @@
 		padding: 0;
 		font-size: 15px;
 	}
+
 	#boton-contactos {
 		width: 20%;
 		height: 25px;

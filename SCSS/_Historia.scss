@@ -4,6 +4,7 @@
 	display: flex;
 	width: 100%;
 }
+
 /*TITULO HISTORIA*/
 .titulo-secundario-historia {
 	width: 750px;
@@ -22,11 +23,13 @@
 	line-height: 1.3;
 	text-align: center;
 }
+
 /*PARRAFO ACORDEON HISTORIA*/
 .parrafo-acord-historia {
 	width: 90%;
 	text-align: center;
 	margin-top: 2%;
+	margin-left: 3%;
 }
 
 /*MEDIA QUERIES -320PX +767px*/
@@ -37,7 +40,8 @@
 		padding: 7px 7px 7px 7px;
 		font-size: 15px;
 	}
-	.imagen-acord-historia{
+
+	.imagen-acord-historia {
 		width: 100%;
 	}
 }
@@ -51,8 +55,9 @@
 		font-size: 15px;
 	}
 }
+
 /*MEDIA QUERIES -1024px*/
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 	.titulo-secundario-historia {
 		width: 80%;
 		margin-left: 10%;
