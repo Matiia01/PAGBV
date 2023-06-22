@@ -21,38 +21,51 @@
 
 <body>
     <!--HEADER-->
-    <header class="header">
-        <!--GRILLA HEADER-->
-        <div class="div-grilla-principal">
-            <!--IMAGEN ESCUDO-->
-            <img class="grilla-escudo" src="./image/Escudo/CON FONDO.jpg" alt="Escudo del cuartel">
-            <!--TITULO-->
-            <h1 class="grilla-title">Asociacion Cuerpo de Bomberos Voluntarios de Villa Ascasubi</h1>
-        </div>
-        <!--BARRA DE NAVEGACION -->
-        <nav>
-            <ul class="barra-nav">
-                <!--BOTON DE INICIO-->
-                <a href="index.html" class="boton-nav" id="boton-inicio" tabindex="-1" role="button"
-                    aria-disabled="true">INICIO</a>
-                <!--BOTON DE HISTORIA-->
-                <a href="pages/Historia.html" class="boton-nav" id="boton-historia" tabindex="-1" role="button"
-                    aria-disabled="true">HISTORIA</a>
-                <!--BOTON DE INTERVENCIONES-->
-                <a href="pages/Intervenciones.html" class="boton-nav" id="boton-intervenciones" tabindex="-1"
-                    role="button" aria-disabled="true">INTERVENCIONES</a>
-                <!--BOTON DE CAPACITACIONES-->
-                <a href="pages/Capacitaciones.html" class="boton-nav" id="boton-capacitaciones" tabindex="-1"
-                    role="button" aria-disabled="true">CAPACITACIONES</a>
-                <!--BOTON DE CONTACTO-->
-                <a href="pages/Contacto.html" class="boton-nav" id="boton-contactos" tabindex="-1" role="button"
-                    aria-disabled="true">CONTACTO</a>
-            </ul>
+    <header class="header fixed-top">
+        <!--BARRA DE NAVEGACION-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!--ESCUDO-->
+                <a class="navbar-brand" href="index.html"><img src="image/Escudo/SIN FONDO.png" alt="Escudo" height="50"
+                        width="50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--PAGINAS-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/Historia.html">Nuestra Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/Intervenciones.html">Intervenciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/Capacitaciones.html">Capacitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/Contacto.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <!--BUSCADOR-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!--SECTION INDEX-->
     <section class="section-index">
+        <!--H1 INDEX-->
+        <h1 data-aos="zoom-in-down" class="titulo-h1">Asociacion Cuerpo de Bomberos Voluntarios de Villa Ascasubi</h1>
         <!--SECCION IMAGEN-->
         <div class="scale-imagen" id="imagen-index">
             <!--IMAGEN CUERPO ACTIVO-->
@@ -73,76 +86,118 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <!--CARDS CUERPO ACTIVO-->
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/PATO-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Zalloco Mario</p>
-                                <p class="card-text">Jefe Comisario BV</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/HEBER-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Gomez Heber</p>
-                                <p class="card-text">Sub-Jefe Oficial Ispector BV</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/DANI-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Gomez Gustavo</p>
-                                <p class="card-text">Sargento Ayudante BV</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/FRANCO-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Picotto Franco</p>
-                                <p class="card-text">Sargento Primero BV</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/DIEGO-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Baigorria Diego</p>
-                                <p class="card-text">Sargento BV</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-body">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/DARIO-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Rodriguez Dario</p>
-                                <p class="card-text">Bombero Voluntario</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/GASTON-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Colmenares Gaston</p>
-                                <p class="card-text">Bombero Voluntario</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/FLOR-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Colmenares Florencia</p>
-                                <p class="card-text">Bombero Voluntario</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/MATIAS-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Baigorria Matias</p>
-                                <p class="card-text">Bombero Voluntario</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Cuerpo Activo/JULI-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Gomez Julieta</p>
-                                <p class="card-text">Bombero Voluntario</p>
+                        <div class="container text-center">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-2 g-lg-3">
+                                <!--ZALLOCO MARIO-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/PATO-min.jpeg" class="card-img-top"
+                                            alt="ZALLOCO MARIO">
+                                        <div class="card-body">
+                                            <p class="card-text">Zalloco Mario</p>
+                                            <p class="card-text">Jefe Comisario</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--GOMEZ HEBER-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/HEBER-min.jpeg" class="card-img-top"
+                                            alt="GOMEZ HEBER">
+                                        <div class="card-body">
+                                            <p class="card-text">Gomez Heber</p>
+                                            <p class="card-text">Sub-Jefe Oficial Ispector</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--GOMEZ GUSTAVO-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/DANI-min.jpeg" class="card-img-top"
+                                            alt="GOMEZ GUSTAVO">
+                                        <div class="card-body">
+                                            <p class="card-text">Gomez Gustavo</p>
+                                            <p class="card-text">Sargento Ayudante</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--PICOTTO FRANCO-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/FRANCO-min.jpeg" class="card-img-top"
+                                            alt="PICOTTO FRANCO">
+                                        <div class="card-body">
+                                            <p class="card-text">Picotto Franco</p>
+                                            <p class="card-text">Sargento Primero</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--BAIGORRIA DIEGO-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/DIEGO-min.jpeg" class="card-img-top"
+                                            alt="BAIGORRIA DIEGO">
+                                        <div class="card-body">
+                                            <p class="card-text">Baigorria Diego</p>
+                                            <p class="card-text">Sargento</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--RODRIGUEZ DARIO-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/DARIO-min.jpeg" class="card-img-top"
+                                            alt="RODRIGUEZ DARIO">
+                                        <div class="card-body">
+                                            <p class="card-text">Rodriguez Dario</p>
+                                            <p class="card-text">Bombero Voluntario</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--COLMENARES GASTON-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/GASTON-min.jpeg" class="card-img-top"
+                                            alt="COLMENARES GASTON">
+                                        <div class="card-body">
+                                            <p class="card-text">Colmenares Gaston</p>
+                                            <p class="card-text">Bombero Voluntario</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--COLMENARES FLORENCIA-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/FLOR-min.jpeg" class="card-img-top"
+                                            alt="COLMENARES FLORENCIA">
+                                        <div class="card-body">
+                                            <p class="card-text">Colmenares Florencia</p>
+                                            <p class="card-text">Bombero Voluntario</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--BAIGORRIA MATIAS-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/MATIAS-min.jpeg" class="card-img-top"
+                                            alt="BAIGORRIA MATIAS">
+                                        <div class="card-body">
+                                            <p class="card-text">Baigorria Matias</p>
+                                            <p class="card-text">Bombero Voluntario</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--GOMEZ JULIETA-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Cuerpo Activo/JULI-min.jpeg" class="card-img-top"
+                                            alt="GOMEZ JULIETA">
+                                        <div class="card-body">
+                                            <p class="card-text">Gomez Julieta</p>
+                                            <p class="card-text">Bombero Voluntario</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -161,33 +216,49 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <!--CARDS COMISION DIRECTIVA-->
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Comision Directiva/LEO-min.jpeg" class="card-img-top" alt="Presidente">
-                            <div class="card-body">
-                                <p class="card-text">Leonardo Del Col.</p>
-                                <p class="card-text">Presidente</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Comision Directiva/MARIA CLARA-min.jpeg" class="card-img-top"
-                                alt="Tesorera">
-                            <div class="card-body">
-                                <p class="card-text">Maria Clara Castagñon.</p>
-                                <p class="card-text">Tesorera</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Comision Directiva/VALERIA-min.jpeg" class="card-img-top" alt="Secretaria">
-                            <div class="card-body">
-                                <p class="card-text">Valeria Rodriguez.</p>
-                                <p class="card-text">Secretaria</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Comision Directiva/LAURA-min.jpeg" class="card-img-top" alt="Vocal">
-                            <div class="card-body">
-                                <p class="card-text">Laura Benitez.</p>
-                                <p class="card-text">Vocal</p>
+                        <div class="container text-center">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2 g-lg-3">
+
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Comision Directiva/LEO-min.jpeg" class="card-img-top"
+                                            alt="Presidente">
+                                        <div class="card-body">
+                                            <p class="card-text">Leonardo Del Col.</p>
+                                            <p class="card-text">Presidente</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Comision Directiva/MARIA CLARA-min.jpeg" class="card-img-top"
+                                            alt="Tesorera">
+                                        <div class="card-body">
+                                            <p class="card-text">Maria Clara Castagñon.</p>
+                                            <p class="card-text">Tesorera</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Comision Directiva/VALERIA-min.jpeg" class="card-img-top"
+                                            alt="Secretaria">
+                                        <div class="card-body">
+                                            <p class="card-text">Valeria Rodriguez.</p>
+                                            <p class="card-text">Secretaria</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Comision Directiva/LAURA-min.jpeg" class="card-img-top"
+                                            alt="Vocal">
+                                        <div class="card-body">
+                                            <p class="card-text">Laura Benitez.</p>
+                                            <p class="card-text">Vocal</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -206,54 +277,78 @@
                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <!--CARDS DE LAS UNIDADES-->
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Unidades/ABASTECIMIENTO.jpeg" class="card-img-top" alt="Abastecimiento">
-                            <div class="card-body">
-                                <p class="card-text">UNIDAD N° 7</p>
-                                <p class="card-text">MARCA: IVECO - 1828</p>
-                                <p class="card-text">UTILIDAD: Abastecimiento con 13.000Lts.</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Unidades/CHEVROLET.jpeg" class="card-img-top" alt="Traslado de personal">
-                            <div class="card-body">
-                                <p class="card-text">UNIDAD N° 8</p>
-                                <p class="card-text">MARCA: CHEVROLET - S10</p>
-                                <p class="card-text">UTILIDAD: Traslado de Personal y Equipamiento.</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Unidades/AMBULANCIA.jpeg" class="card-img-top" alt="Unidad Sanitaria">
-                            <div class="card-body">
-                                <p class="card-text">UNIDAD N° 9</p>
-                                <p class="card-text">MARCA: FORD - F150</p>
-                                <p class="card-text">UTILIDAD: Unidad Sanitaria.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-body">
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Unidades/RANGER.jpeg" class="card-img-top" alt="Forestal">
-                            <div class="card-body">
-                                <p class="card-text">UNIDAD N° 11</p>
-                                <p class="card-text">MARCA: FORD - RANGER</p>
-                                <p class="card-text">UTILIDAD: Equipada con Kit Forestal.</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Unidades/TOYOTA.jpeg" class="card-img-top" alt="Forestal 2">
-                            <div class="card-body">
-                                <p class="card-text">UNIDAD N° 12</p>
-                                <p class="card-text">MARCA: TOYOTA - HYLUX</p>
-                                <p class="card-text">UTILIDAD: Equipada con Kit Forestal.</p>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="image/Unidades/AUTOBOMBA.jpeg" class="card-img-top" alt="Autobomba">
-                            <div class="card-body">
-                                <p class="card-text">UNIDAD N° 13</p>
-                                <p class="card-text">MARCA: VOLVO - FL6</p>
-                                <p class="card-text">UTILIDAD: Autobomba</p>
+                        <div class="container text-center">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-6 g-2 g-lg-3">
+
+                                <!--UNIDAD N°7-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Unidades/ABASTECIMIENTO.jpeg" class="card-img-top"
+                                            alt="Abastecimiento">
+                                        <div class="card-body">
+                                            <p class="card-text">UNIDAD N° 7</p>
+                                            <p class="card-text">MARCA: IVECO - 1828</p>
+                                            <p class="card-text">UTILIDAD: Abastecimiento con 13.000Lts y Equipamiento Forestal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--UNIDAD N°8-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Unidades/CHEVROLET.jpeg" class="card-img-top"
+                                            alt="Traslado de personal">
+                                        <div class="card-body">
+                                            <p class="card-text">UNIDAD N° 8</p>
+                                            <p class="card-text">MARCA: CHEVROLET - S10</p>
+                                            <p class="card-text">UTILIDAD: Traslado de Personal y Equipamiento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--UNIDAD N°9-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Unidades/AMBULANCIA.jpeg" class="card-img-top"
+                                            alt="Unidad Sanitaria">
+                                        <div class="card-body">
+                                            <p class="card-text">UNIDAD N° 9</p>
+                                            <p class="card-text">MARCA: FORD - F150</p>
+                                            <p class="card-text">UTILIDAD: Unidad Sanitaria y de Traslado de Damnificados.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--UNIDAD N°11-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Unidades/RANGER.jpeg" class="card-img-top" alt="Forestal">
+                                        <div class="card-body">
+                                            <p class="card-text">UNIDAD N° 11</p>
+                                            <p class="card-text">MARCA: FORD - RANGER</p>
+                                            <p class="card-text">UTILIDAD: Equipada con Kit Forestal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--UNIDAD N°12-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Unidades/TOYOTA.jpeg" class="card-img-top" alt="Forestal 2">
+                                        <div class="card-body">
+                                            <p class="card-text">UNIDAD N° 12</p>
+                                            <p class="card-text">MARCA: TOYOTA - HYLUX</p>
+                                            <p class="card-text">UTILIDAD: Equipada con Kit Forestal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--UNIDAD N°13-->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="image/Unidades/AUTOBOMBA.jpeg" class="card-img-top" alt="Autobomba">
+                                        <div class="card-body">
+                                            <p class="card-text">UNIDAD N° 13</p>
+                                            <p class="card-text">MARCA: VOLVO - FL6</p>
+                                            <p class="card-text">UTILIDAD: Autobomba</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -296,6 +391,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <!--LIBRERIA DE AOS-ANIMACIONES-JS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

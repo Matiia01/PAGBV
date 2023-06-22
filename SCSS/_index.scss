@@ -1,7 +1,7 @@
 /*INDEX*/
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*SECCIONES*/
 .section-index {
+	margin-top: 7%;
 	margin-bottom: 5%;
 	justify-content: center;
 }
@@ -11,7 +11,7 @@
 	width: 60%;
 	display: block;
 	margin: auto;
-	margin-bottom: 1%;
+	margin-bottom: 4%;
 }
 
 .scale-imagen {
@@ -55,77 +55,15 @@
 }
 
 .accordion-body {
-	display: flex;
-	justify-content: center;
-}
-
-.card {
-	margin: 0px;
+	width: 90%;
+	margin: auto;
 }
 
 /*MEDIA QUERIES -320PX +767px*/
-/*INDEX//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media (min-width: 320px) and (max-width: 767px) {
-	#imagen-index {
-		margin-top: 30%;
-		margin-bottom: 5%;
-	}
-
-	.accordion-button {
-		margin-bottom: 3%;
-		padding: 5px;
-		font-size: 8px;
-	}
-
-	.accordion-body {
-		padding: 0px;
-		padding-bottom: 5px;
-	}
-
-	.card-body {
-		padding: 0px;
-
-		p {
-			font-size: 7px;
-			margin: 0px;
-		}
-	}
-}
+@media (min-width: 320px) and (max-width: 767px) {}
 
 /*MEDIA QUERIES -768px +1023px*/
-/*INDEX//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media (min-width: 768px) and (max-width: 1023px) {
-	.section-index {
-		margin-top: 20%;
-	}
-
-	#imagen-index {
-		margin-bottom: 5%;
-	}
-
-	.accordion-button {
-		margin-bottom: 3%;
-		padding: 10px;
-		font-size: 15px;
-	}
-
-	.accordion-body {
-		padding: 10px;
-	}
-
-	.card-body {
-		padding: 8px;
-
-		p {
-			font-size: 12px;
-			margin: 0px;
-		}
-	}
-}
+@media (min-width: 768px) and (max-width: 1023px) {}
 
 /*MEDIA QUERIES -1024px*/
-@media (min-width: 1024px) {
-	.section-index {
-		margin-top: 15%;
-	}
-}
+@media (min-width: 1024px) {}
