@@ -2,7 +2,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .section-index {
 	margin-top: 7%;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 	justify-content: center;
 }
 
@@ -11,7 +11,8 @@
 	width: 60%;
 	display: block;
 	margin: auto;
-	margin-bottom: 4%;
+	margin-top: 2%;
+	margin-bottom: 5%;
 }
 
 .scale-imagen {
@@ -59,23 +60,55 @@
 	margin: auto;
 }
 
-/*MEDIA QUERIES -320PX +767px*/
+/*MEDIA QUERIES -320PX +450px*/
 @media (min-width: 320px) and (max-width: 450px) {
 	.section-index {
-		margin-top: 25%;
+		margin-top: 24%;
 		margin-bottom: 10%;
 	}
+
 	#imagen-index {
 		width: 90%;
+		margin-top: 6%;
+		margin-bottom: 6%;
 	}
 }
 
-/*MEDIA QUERIES -768px +1023px*/
-@media (min-width: 768px) and (max-width: 1023px) {
+/*MEDIA QUERIES -451px +767px*/
+@media (min-width: 451px) and (max-width: 767px) {
 	.section-index {
-		margin-top: 11%;
+		margin-top: 17%;
 	}
+
 	#imagen-index {
-		width: 80%;
+		width: 85%;
+		margin-top: 7%;
+		margin-bottom: 7%;
+	}
+}
+
+/*MEDIA QUERIES -768px +1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	.section-index {
+		margin-top: 10%;
+	}
+
+	#imagen-index {
+		width: 70%;
+		margin-top: 6%;
+		margin-bottom: 6%;
+	}
+}
+
+/*MEDIA QUERIES -1025px +1300px*/
+@media (min-width: 1025px) and (max-width: 1300px) {
+	.section-index {
+		margin-top: 8%;
+	}
+
+	#imagen-index {
+		width: 70%;
+		margin-top: 4%;
+		margin-bottom: 6%;
 	}
 }
