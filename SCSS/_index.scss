@@ -60,10 +60,22 @@
 }
 
 /*MEDIA QUERIES -320PX +767px*/
-@media (min-width: 320px) and (max-width: 767px) {}
+@media (min-width: 320px) and (max-width: 450px) {
+	.section-index {
+		margin-top: 25%;
+		margin-bottom: 10%;
+	}
+	#imagen-index {
+		width: 90%;
+	}
+}
 
 /*MEDIA QUERIES -768px +1023px*/
-@media (min-width: 768px) and (max-width: 1023px) {}
-
-/*MEDIA QUERIES -1024px*/
-@media (min-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.section-index {
+		margin-top: 11%;
+	}
+	#imagen-index {
+		width: 80%;
+	}
+}
