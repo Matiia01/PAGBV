@@ -1,30 +1,31 @@
-/*GRILLAS CONTACTO*/
+.grilla-titulo {
+	margin-top: 6%;
+	margin-bottom: 5%;
+}
+
+/*GRIDS CONTACTO*/
 .div-contacto {
 	width: 100%;
 	height: auto;
-	margin-top: 6%;
-	margin-bottom: 10%;
 	display: grid;
-	grid-template-rows: 80px 60px 60px 60px 300px;
+	grid-template-areas:
+		"div-contacto div-form"
+		"div-contacto div-form"
+		"div-contacto div-form"
+		"div-contacto div-form";
 	grid-template-columns: 50% 50%;
-}
-
-
-.grilla-titulo {
-	grid-column: 1/3;
+	grid-template-rows: 6% 6% 6% 45%;
 }
 
 .grilla-telefono {
-	grid-row: 2/3;
-	margin-left: 200px;
-	margin-top: 20px;
+	grid-row: 1/2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .grilla-instagram {
-	grid-row: 3/4;
+	grid-row: 2/3;
 	margin-left: 200px;
 	margin-top: 20px;
 	display: flex;
@@ -33,7 +34,7 @@
 }
 
 .grilla-facebook {
-	grid-row: 4/5;
+	grid-row: 3/4;
 	margin-left: 200px;
 	margin-top: 20px;
 	display: flex;
@@ -42,13 +43,13 @@
 }
 
 .grilla-mapa {
-	grid-row: 5/6;
+	grid-row: 4/5;
 	margin-left: 60px;
-	margin-top: 20px;
+	align-items: center;
+	justify-content: center;
 }
 
 .grilla-nombre {
-	grid-row: 2/3;
 	margin-top: 20px;
 	margin-left: 20%;
 	align-items: center;
@@ -56,27 +57,23 @@
 }
 
 .grilla-email {
-	grid-row: 3/4;
 	margin-left: 20%;
 	align-items: center;
 	justify-content: center;
 }
 
 .grilla-asunto {
-	grid-row: 4/5;
 	margin-left: 20%;
 	align-items: center;
 	justify-content: center;
 }
 
 .grilla.text {
-	grid-row: 5/6;
 	align-items: center;
 	justify-content: center;
 }
 
 .grilla-enviar {
-	grid-row: 5/6;
 	margin-left: 40%;
 	align-items: center;
 	justify-content: center;
@@ -100,65 +97,50 @@
 
 /*ICONOS CONTACTO*/
 .icon-telefono {
-	grid-row: 2/3;
+	grid-row: 1/2;
 	width: 30px;
 	height: 20px;
 	margin-right: 10px;
-
 }
 
 .icon-instagram {
-	grid-row: 3/4;
+	grid-row: 2/3;
 	width: 30px;
 	height: 20px;
 	margin-right: 10px;
 }
 
 .icon-facebook {
-	grid-row: 4/5;
+	grid-row: 3/4;
 	width: 30px;
 	height: 20px;
 	margin-right: 10px;
 }
 
 /*FORMULARIO*/
-.nombre-contactos {
-	margin-bottom: 40px;
-}
-
 .email-contacto {
 	margin-left: 14px;
-	margin-bottom: 40px;
 }
 
 .asunto-contacto {
 	margin-left: 7px;
-	margin-bottom: 40px;
+	margin-bottom: 15%;
 }
 
 .text-contactos {
+	width: 90%;
 	margin-bottom: 0px;
-	margin-left: 20%;
+
 }
 
-/*MEDIA QUERIES -320PX +767px*/
-@media (min-width: 320px) and (max-width: 767px) {
-
-	/*GRILLA CONTACTOS*/
-	.div-contacto {
-		grid-template-rows: 55px 30px 30px 30px 200px;
-	}
-
-	.titulo-secundario-contacto {
-		width: 80%;
-		margin-left: 10%;
-		padding: 7px 7px 7px 7px;
-		font-size: 15px;
+/*MEDIA QUERIES -320PX +450px*/
+@media (min-width: 320px) and (max-width: 450px) {
+	.grilla-titulo {
+		margin-top: 24%;
 	}
 
 	.grilla-telefono {
 		margin-left: 10%;
-		margin-top: 0px;
 	}
 
 	.grilla-instagram {
@@ -172,22 +154,27 @@
 	}
 
 	.grilla-mapa {
-		margin-left: 2%;
-		margin-top: 20px;
+		margin: auto;
+		margin-top: 10%;
 	}
 
 	.grilla-nombre {
 		margin-top: 0px;
-		margin-left: 5px;
+		margin-left: 2%;
 	}
 
 	.grilla-email {
 		margin-top: 0px;
-		margin-left: 5px;
+		margin-left: 2%;
 	}
 
 	.grilla-asunto {
-		margin-left: 5px;
+		margin-left: 2%;
+	}
+
+	.grilla-text {
+		margin: auto;
+		margin-top: 1%;
 	}
 
 	.grilla-enviar {
@@ -230,65 +217,61 @@
 
 	.asunto-contacto {
 		margin-left: 4px;
-		margin-bottom: 20px;
 		font-size: 6px;
 	}
 
 	.text-contactos {
-		width: 145px;
-		height: 155px;
-		margin-left: 5px;
-		margin-bottom: 13px;
+		width: 90%;
+		height: 80%;
+		margin: auto;
 	}
 }
 
-/*MEDIA QUERIES -768px +1024px*/
-@media (min-width: 768px) and (max-width: 1023px) {
+/*MEDIA QUERIES -451px +767px*/
+@media (min-width: 451px) and (max-width: 767px) {
+	.div-contacto {
+		grid-template-rows: 8% 8% 8% 40%;
+	}
 
-	.titulo-secundario-contacto {
-		width: 80%;
-		margin-left: 10%;
-		padding: 7px 7px 7px 7px;
-		font-size: 15px;
+	.grilla-titulo {
+		margin-top: 17%;
 	}
 
 	.grilla-telefono {
-		margin-left: 25%;
+		margin-left: 5%;
 		margin-top: 0px;
 	}
 
 	.grilla-instagram {
-		margin-left: 25%;
+		margin-left: 5%;
 		margin-top: 0px;
 	}
 
 	.grilla-facebook {
-		margin-left: 25%;
+		margin-left: 5%;
 		margin-top: 0px;
 	}
 
 	.grilla-mapa {
-		margin-left: 25%;
+		margin: auto;
 		margin-top: 20px;
 	}
 
 	.grilla-nombre {
-		margin-top: 10px;
-		margin-left: 35px;
+		margin-left: 5%;
+		margin-top: 0;
 	}
 
 	.grilla-email {
-		margin-top: 20px;
-		margin-left: 35px;
+		margin-left: 5%;
 	}
 
 	.grilla-asunto {
-		margin-top: 20px;
-		margin-left: 35px;
+		margin-left: 5%;
 	}
 
 	.grilla-enviar {
-		margin-left: 130px;
+		margin-left: 40%;
 	}
 
 	.clas-contactos {
@@ -296,8 +279,8 @@
 	}
 
 	.maps-contactos {
-		height: 150px;
-		width: 250px;
+		width: 90%;
+		height: auto;
 		margin-left: 10px;
 	}
 
@@ -317,35 +300,218 @@
 	}
 
 	.nombre-contactos {
-		margin-bottom: 10px;
+		margin-bottom: 10%;
 		font-size: 15px;
 	}
 
 	.email-contacto {
-		margin-left: 10px;
-		margin-bottom: 10px;
+		margin: 0;
+		margin-bottom: 10%;
 		font-size: 15px;
 	}
 
 	.asunto-contacto {
-		margin-left: 4px;
-		margin-bottom: 20px;
+		margin: 0;
+		margin-bottom: 10%;
 		font-size: 15px;
 	}
 
 	.text-contactos {
-		width: 250px;
-		height: 150px;
-		margin-left: 40px;
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+		margin-bottom: 5%;
 	}
 }
 
-/*MEDIA QUERIES -1024px*/
-@media (min-width: 1024px) {
-	.titulo-secundario-contacto {
-		width: 80%;
-		margin-left: 10%;
-		padding: 7px 7px 7px 7px;
+/*MEDIA QUERIES -768px +1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	.div-contacto {
+		grid-template-rows: 8% 8% 8% 40%;
+	}
+
+	.grilla-titulo {
+		margin-top: 10%;
+	}
+
+	.grilla-telefono {
+		margin-left: 8%;
+		margin-top: 0px;
+	}
+
+	.grilla-instagram {
+		margin-left: 8%;
+		margin-top: 0px;
+	}
+
+	.grilla-facebook {
+		margin-left: 8%;
+		margin-top: 0px;
+	}
+
+	.grilla-mapa {
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	.grilla-nombre {
+		margin-left: 8%;
+		margin-top: 0;
+	}
+
+	.grilla-email {
+		margin-left: 8%;
+	}
+
+	.grilla-asunto {
+		margin-left: 8%;
+	}
+
+	.grilla-enviar {
+		margin-left: 40%;
+	}
+
+	.clas-contactos {
 		font-size: 15px;
+	}
+
+	.maps-contactos {
+		width: 90%;
+		height: auto;
+		margin-left: 10px;
+	}
+
+	.icon-telefono {
+		width: 40px;
+		height: 20px;
+	}
+
+	.icon-instagram {
+		width: 40px;
+		height: 20px;
+	}
+
+	.icon-facebook {
+		width: 40px;
+		height: 30px;
+	}
+
+	.nombre-contactos {
+		margin-bottom: 10%;
+		font-size: 15px;
+	}
+
+	.email-contacto {
+		margin: 0;
+		margin-bottom: 10%;
+		font-size: 15px;
+	}
+
+	.asunto-contacto {
+		margin: 0;
+		margin-bottom: 10%;
+		font-size: 15px;
+	}
+
+	.text-contactos {
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+}
+
+/*MEDIA QUERIES -1025px +1300px*/
+@media (min-width: 1025px) and (max-width: 1300px) {
+	.div-contacto {
+		grid-template-rows: 10% 10% 10% 40%;
+	}
+
+	.grilla-titulo {
+		margin-top: 8%;
+	}
+
+	.grilla-telefono {
+		margin-left: 15%;
+		margin-top: 0px;
+	}
+
+	.grilla-instagram {
+		margin-left: 15%;
+		margin-top: 0px;
+	}
+
+	.grilla-facebook {
+		margin-left: 15%;
+		margin-top: 0px;
+	}
+
+	.grilla-mapa {
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	.grilla-nombre {
+		margin-left: 10%;
+	}
+
+	.grilla-email {
+		margin-left: 10%;
+	}
+
+	.grilla-asunto {
+		margin-left: 10%;
+	}
+
+	.grilla-enviar {
+		margin-left: 40%;
+	}
+
+	.clas-contactos {
+		font-size: 15px;
+	}
+
+	.maps-contactos {
+		margin: auto;
+		margin-left: 10px;
+	}
+
+	.icon-telefono {
+		width: 40px;
+		height: 20px;
+	}
+
+	.icon-instagram {
+		width: 40px;
+		height: 20px;
+	}
+
+	.icon-facebook {
+		width: 40px;
+		height: 30px;
+	}
+
+	.nombre-contactos {
+		margin-bottom: 10%;
+		font-size: 15px;
+	}
+
+	.email-contacto {
+		margin: 0;
+		margin-bottom: 10%;
+		font-size: 15px;
+	}
+
+	.asunto-contacto {
+		margin: 0;
+		margin-bottom: 10%;
+		font-size: 15px;
+	}
+
+	.text-contactos {
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+		margin-bottom: 5%;
 	}
 }
