@@ -317,6 +317,8 @@
 
 .grilla-telefono {
   grid-row: 1/2;
+  margin-left: 200px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
