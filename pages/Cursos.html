@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Estos son nuestros medios de contacto, ya sea por alguna emergencia o cualquier informacion que necesites.">
+        content="Te contamos sobre en que consisten nuestras capacitaciones y en que especialidades..">
     <meta name="keywords"
-        content="100, bomberos_va,  bomberos, voluntarios, mapa, telefono, instagram, facebook, email, enviar">
+        content="incendio, operaciones, rescate, acuatico,materiales, peligrosos, accidente, aereo, segundo, nivel, localidad, liderazgo">
     <!--LIBRERIA DE ANIMACIONES-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--LIBRERIA DE BOOTSTRAP CSS-->
@@ -18,12 +18,12 @@
     <!--ICONO CUARTEL-->
     <link rel="shortcut icon" href="../image/Escudo/SIN FONDO.png">
     <!--NOMBRE DE PAGINA-->
-    <title>Contacto BV</title>
+    <title>Cursos</title>
 </head>
 
 <body>
     <!--HEADER-->
-    <header class="header-contacto fixed-top">
+    <header class="header-capacitacion fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img src="../image/Escudo/SIN FONDO.png" alt="Escudo"
@@ -56,68 +56,38 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!--MAIN CONTACTOS-->
-    <main class="main-contacto">
-        <!--TITULO SECUNDARIO-->
-        <div data-aos="fade-up-right" class="grilla-titulo">
-            <h1 data-aos="zoom-in-down" class="titulo-h1">CONTACTO</h1>
-        </div>
-        <div class="div-contacto">
-            <!-- DIV TELEFONOS DE CONTACTO-->
-            <div data-aos="fade-up-right" class="grilla-telefono">
-                <li class="icon-telefono"><img src="../icon/phone-solid.svg" alt=""></li>
-                <li class="clas-contactos">100 / 498730 / 3571547429</li>
-            </div>
-            <!--DIV INSTAGRAM-->
-            <div data-aos="fade-up-right" class="grilla-instagram">
-                <li class="icon-instagram"><img src="../icon/instagram.svg" alt=""></li>
-                <li class="clas-contactos"><a target="_blank"
-                        href="https://www.instagram.com/bomberos_va/">@Bomberos_VA</a></li>
-            </div>
-            <!--DIV FACEBOOK-->
-            <div data-aos="fade-up-right" class="grilla-facebook">
-                <li class="icon-facebook"><img src="../icon/facebook.svg" alt=""></li>
-                <li class="clas-contactos"><a target="_blank" href="https://www.facebook.com/Bomberosva.1265">Bomberos
-                        Voluntarios Villa Ascasubi</a>
-            </div>
-            <!--DIV MAPA-->
-            <div data-aos="fade-up-right" class="grilla-mapa"><iframe class="maps-contactos"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27016.587560136413!2d-63.887693250000005!3d-32.17529415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd124b82947ebf%3A0x1e41ae9993bff429!2sASOC.%20CUERPO%20DE%20BOMBEROS%20VOLUNTARIOS%20DE%20VILLA%20ASCASUBI!5e0!3m2!1ses-419!2sar!4v1683437935487!5m2!1ses-419!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <!--FORMULARIO-->
-            <form action="">
-                <!--NOMBRE-->
-                <div data-aos="fade-up-left" class="grilla-nombre"><label for="nombre">Nombre: </label>
-                    <input class="nombre-contactos" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                </div>
-                <!--EMAIL-->
-                <div data-aos="fade-up-left" class="grilla-email"><label for="email">Email: </label>
-                    <input class="email-contacto" type="email" name="email" id="email" placeholder="Email">
-                </div>
-                <!--ASUNTO-->
-                <div data-aos="fade-up-left" class="grilla-asunto"><label for="asunto">Asunto: </label>
-                    <input class="asunto-contacto" type="text" name="Asunto" id="asunto" placeholder="Asunto">
-                </div>
-                <!--TEXTO-->
-                <div data-aos="fade-up-left" class="grilla-text"><textarea class="text-contactos" name="" id="text"
-                        cols="30" rows="6">Escriba su mensaje: </textarea>
-                    <!--BOTON ENVIAR-->
-                    <div data-aos="fade-up-left" class="grilla-enviar"><input class="botton-enviar" type="submit"
-                            value="Enviar"></div>
-                </div>
-            </form>
-        </div>
+    <!--MAIN-->
+    <main class="main-carritoCursos">
+        <section class="seccion-carritoCursos">
+            <!--TITULO SECUNDARIO-->
+            <h1 data-aos="zoom-in-down" class="titulo-h1">!Bienvenido/a a nuestra Plataforma de Cursos!</h1>
+            <h2>Cursos Disponibles: </h2>
+            <!--MUESTRA LOS CURSOS DISPONIBLES-->
+            <ul id='cursosDisponibles'></ul>
+            <h2>Carrito:</h2>
+            <!--AQUI SE MUESTA EL CARRITO ACTUAL-->
+            <ul id="carrito"></ul>
+            <!--MUESTRA EL TOTAL DEL CARRITO-->
+            <p>Total: $<span id="total">0</span></p>
+        </section>
+
     </main>
 
+
+
+
+
+
+
+
+    <script src="../js/main.js"></script>
     <!--FOOTER-->
     <footer>
         <!--PIE DE PAGINA-->
