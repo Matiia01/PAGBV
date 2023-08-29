@@ -1,11 +1,17 @@
-/*CARRITO DE CURSOS*/
-.main-carritoCursos {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
+.title-carrito-cursos{
     margin-top: 6%;
 }
 
-.seccion-carritoCursos {
-	width: 100%;
+.main-carritoCursos{
+    display: flex;
+    margin: 2%;
+}
+
+.seccion-carritoCursos{
+    width: 60%;
+}
+
+.aside-carritoCursos{
+    width: 40%;
+    margin-left: 2%;
 }
