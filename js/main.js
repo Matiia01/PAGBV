@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function cargarCarritoDesdeLocalStorage() {
     const carritoJSON = localStorage.getItem("carrito")
     if (carritoJSON) {
-      cursosCarrito = JSON.parse(carritoJSON)
+      cursosCarrito = JSON.parse(carritoJSON) || []
       actualizarCarrito()
     }
   }
