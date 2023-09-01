@@ -352,6 +352,7 @@ a {
 }
 
 .seccion-carritoCursos {
+  display: flex;
   width: 60%;
 }
 

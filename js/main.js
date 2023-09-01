@@ -1,53 +1,52 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const cursosEnCarrito = []
+  const cursosCarrito = []
   const carritoList = document.getElementById("carrito")
   const totalSpan = document.getElementById("total")
 
   function actualizarCarrito() {
     carritoList.innerHTML = ""
     let total = 0
-    cursosEnCarrito.forEach((curso) => {
-      const listItem = document.createElement("li")
-      listItem.textContent = `${curso.title} - $${curso.price}`
+    cursosCarrito.forEach((curso) => {
+      const listItem = document.createElement("div")
+      listItem.textContent = `${curso.titulo} - $${curso.precio}`
 
-      const removeButton = document.createElement("button")
-      removeButton.textContent = "Quitar"
-      removeButton.addEventListener("click", () => {
+      const quitCurso = document.createElement("button")
+      quitCurso.textContent = "Quitar"
+      quitCurso.addEventListener("click", () => {
         quitarDelCarrito(curso)
       })
 
-      listItem.appendChild(removeButton)
+      listItem.appendChild(quitCurso)
       carritoList.appendChild(listItem)
-      total += curso.price
+      total += curso.precio
     })
     totalSpan.textContent = total
   }
 
   function agregarAlCarrito(curso) {
-    cursosEnCarrito.push(curso)
+    cursosCarrito.push(curso)
     actualizarCarrito()
   }
 
   function quitarDelCarrito(curso) {
-    const index = cursosEnCarrito.indexOf(curso)
+    const index = cursosCarrito.indexOf(curso)
     if (index > -1) {
-      cursosEnCarrito.splice(index, 1)
+      cursosCarrito.splice(index, 1)
       actualizarCarrito()
     }
   }
 
   function finalizarCompra() {
-    if (cursosEnCarrito.length > 0) {
+    if (cursosCarrito.length > 0) {
       swal("¡Compra Finalizada!", "Gracias por tu compra.", "success")
-      cursosEnCarrito.length = 0
+      cursosCarrito.length = 0
       actualizarCarrito()
     } else {
       swal("Carrito Vacío", "Agrega cursos al carrito antes de finalizar la compra.", "warning")
     }
   }
 
-  // Cargar cursos desde el JSON utilizando fetch
-  fetch("../JSON/courses.json")
+  fetch("../JSON/cursos.json")
     .then(response => response.json())
     .then(data => {
       data.forEach(curso => {
@@ -56,9 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
         card.style.width = "18rem"
 
         const image = document.createElement("img")
-        image.src = curso.image;
+        image.src = curso.imagen;
         image.className = "card-img-top"
-        image.alt = curso.title
+        image.alt = curso.titulo
         card.appendChild(image)
 
         const cardBody = document.createElement("div")
@@ -66,12 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const cardTitle = document.createElement("h5")
         cardTitle.className = "card-title"
-        cardTitle.textContent = curso.title
+        cardTitle.textContent = curso.titulo
         cardBody.appendChild(cardTitle)
 
         const cardText = document.createElement("p")
         cardText.className = "card-text"
-        cardText.textContent = `$${curso.price}`
+        cardText.textContent = `$${curso.precio}`
         cardBody.appendChild(cardText)
 
         const agregarButton = document.createElement("button")
@@ -84,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cardBody.appendChild(agregarButton)
 
         card.appendChild(cardBody)
-        document.body.appendChild(card) // Agregar al cuerpo del documento
+        document.body.appendChild(card)
       })
     })
     .catch(error => {

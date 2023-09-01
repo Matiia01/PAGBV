@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "imagen": "../image/Cursos/Imagen de WhatsApp 2023-08-29 a las 23.10.54.jpg",
+        "titulo": "Curso RCP-DEA.",
+        "precio": 1500
+    },
+    {
+        "id": 2,
+        "imagen": "../image/Cursos/Imagen de WhatsApp 2023-08-29 a las 22.45.14.jpg",
+        "titulo": "Curso Maniobras de Hemblich.",
+        "precio": 1500
+    },
+    {
+        "id": 3,
+        "imagen": "../image/Cursos/Imagen de WhatsApp 2023-08-29 a las 22.51.39.jpg",
+        "titulo": "Curso de Primeros Auxilios",
+        "precio": 2500
+    },
+    {
+        "id": 4,
+        "imagen": "../image/Cursos/Imagen de WhatsApp 2023-08-29 a las 23.02.34.jpg",
+        "titulo": "Prevencion en incendios de Cocina.",
+        "precio": 2000
+    },
+    {
+        "id": 5,
+        "imagen": "../image/Cursos/Imagen de WhatsApp 2023-08-31 a las 01.57.31.jpg",
+        "titulo": "Inscripcion Nivel 1",
+        "precio": 5000
+    },
+    {
+        "id": 6,
+        "imagen": "../image/Cursos/Imagen de WhatsApp 2023-08-30 a las 12.42.57.jpg",
+        "titulo": "Prevencion con Monoxido de Carbono",
+        "precio": 2000
+    }
+]
