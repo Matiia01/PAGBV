@@ -1,19 +1,24 @@
-.title-carrito-cursos{
+.title-carrito-cursos {
     margin-top: 6%;
 }
 
-.main-carritoCursos{
+.main-carritoCursos {
     display: flex;
     margin: 2%;
 }
 
-.seccion-carritoCursos{
-    display: flex;
+.seccion-carritoCursos {
     width: 60%;
+    /* Establece el ancho deseado para el section */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se envuelvan a la siguiente línea cuando no haya espacio */
+    justify-content: space-between;
+    /* Distribuye las tarjetas uniformemente */
 }
 
-.aside-carritoCursos{
+.aside-carritoCursos {
     width: 40%;
     margin-left: 2%;
 }
-
