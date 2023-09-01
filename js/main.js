@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cursosCarrito = []
+  const cursosConteiner = document.getElementById('cardCursos')
   const carritoList = document.getElementById("carrito")
   const totalSpan = document.getElementById("total")
 
+//FUNCION PARA ACTUALIZAR EL CARRITO EN LA PAGINA
   function actualizarCarrito() {
     carritoList.innerHTML = ""
     let total = 0
@@ -83,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cardBody.appendChild(agregarButton)
 
         card.appendChild(cardBody)
-        document.body.appendChild(card)
+        cardCursos.appendChild(card)
       })
     })
     .catch(error => {
