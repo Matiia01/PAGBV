@@ -54,19 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
   //FUNCION PARA GUARDAR EL CARRITO EN LOCALSTORAGE
   function guardarCarritoEnLocalStorage() {
     if (cursosCarrito.length > 0) {
-      const carritoJSON = JSON.stringify(cursosCarrito);
-      localStorage.setItem("carrito", carritoJSON);
+      const carritoJSON = JSON.stringify(cursosCarrito)
+      localStorage.setItem("carrito", carritoJSON)
     } else {
-      localStorage.removeItem("carrito");
+      localStorage.removeItem("carrito")
     }
   }
 
   //FUNCION PARA CARGAR EL CARRITO DESDE LOCALSTORAGE
   function cargarCarritoDesdeLocalStorage() {
-    const carritoJSON = localStorage.getItem("carrito");
+    const carritoJSON = localStorage.getItem("carrito")
     if (carritoJSON) {
-      cursosCarrito = JSON.parse(carritoJSON);
-      actualizarCarrito();
+      cursosCarrito = JSON.parse(carritoJSON)
+      actualizarCarrito()
     }
   }
 
