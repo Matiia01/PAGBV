@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     carritoList.innerHTML = ""
     let total = 0
     cursosCarrito.forEach((curso) => {
-      const listItem = document.createElement("div")
+      const listItem = document.createElement("li")
       listItem.textContent = `${curso.titulo} - $${curso.precio}`
 
       const quitCurso = document.createElement("button")
