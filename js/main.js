@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const cursosCarrito = []
-  const cursosConteiner = document.getElementById('cardCursos')
+  let cursosCarrito = []
   const carritoList = document.getElementById("carrito")
   const totalSpan = document.getElementById("total")
 
-//FUNCION PARA ACTUALIZAR EL CARRITO EN LA PAGINA
+  //FUNCION PARA ACTUALIZAR EL CARRITO EN LA PAGINA
   function actualizarCarrito() {
     carritoList.innerHTML = ""
     let total = 0
@@ -25,11 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
     totalSpan.textContent = total
   }
 
+  //FUNCION PARA AGREGAR CURSOS AL CARRITO
   function agregarAlCarrito(curso) {
     cursosCarrito.push(curso)
     actualizarCarrito()
   }
 
+  //FUNCION PARA QUITAR CURSOS DEL CARRITO
   function quitarDelCarrito(curso) {
     const index = cursosCarrito.indexOf(curso)
     if (index > -1) {
@@ -38,23 +39,45 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  //FUNCION PARA FINALIZAR LA COMPRA
   function finalizarCompra() {
     if (cursosCarrito.length > 0) {
       swal("¡Compra Finalizada!", "Gracias por tu compra.", "success")
       cursosCarrito.length = 0
       actualizarCarrito()
+      guardarCarritoEnLocalStorage()
     } else {
       swal("Carrito Vacío", "Agrega cursos al carrito antes de finalizar la compra.", "warning")
     }
   }
 
+  //FUNCION PARA GUARDAR EL CARRITO EN LOCALSTORAGE
+  function guardarCarritoEnLocalStorage() {
+    if (cursosCarrito.length > 0) {
+      const carritoJSON = JSON.stringify(cursosCarrito);
+      localStorage.setItem("carrito", carritoJSON);
+    } else {
+      localStorage.removeItem("carrito");
+    }
+  }
+
+  //FUNCION PARA CARGAR EL CARRITO DESDE LOCALSTORAGE
+  function cargarCarritoDesdeLocalStorage() {
+    const carritoJSON = localStorage.getItem("carrito");
+    if (carritoJSON) {
+      cursosCarrito = JSON.parse(carritoJSON);
+      actualizarCarrito();
+    }
+  }
+
+  //CARGA DE CURSOS DESDE EL JSON UTILIZANDO FETCH
   fetch("../JSON/cursos.json")
     .then(response => response.json())
     .then(data => {
       data.forEach(curso => {
         const card = document.createElement("div")
         card.className = "card"
-        card.style.width = "18rem"
+        card.style.width = "15rem"
 
         const image = document.createElement("img")
         image.src = curso.imagen;
@@ -92,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error al cargar los cursos:", error)
     })
 
+    //EVENTO PARA EL BOTON FINALIZAR COMPRA
   const finalizarButton = document.getElementById("finalizarButton")
   finalizarButton.addEventListener("click", finalizarCompra)
 })
